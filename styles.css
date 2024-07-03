@@ -47,6 +47,16 @@ ABOUT LEFT
   color: #fff;
 }
 
+.about-left .profilePicture{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.about-left .profilePicture img{
+    width: 100%;
+}
+
 .about-left #name {
     font-size: 2rem;
     margin: 2.2rem 0 0.6rem 0;
