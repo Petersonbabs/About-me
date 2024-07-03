@@ -263,4 +263,8 @@ END OF ABOUT RIGHT
     .about-left .time{
         flex-direction: row;
     }
+
+    .about-right .sponsors{
+        flex-direction: row;
+    }
 }
