@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./images/peter-babs.jpg"
+      type="image/x-icon"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>About Me || Peter Babs</title>
+  </head>
+  <body>
+    <!-- CONTAINER -->
+    <section class="container">
+      <!-- About left -->
+      <section class="about-left">
+        <!-- About left container -->
+        <div class="about-left-container">
+          <!-- image -->
+          <div class="profilePicture">
+            <img
+              src="./images/peter-babs.jpg"
+              alt="Peter babs Slack Profile Picture"
+              data-testid="slackProfilePicture"
+            />
+          </div>
+          <h1 data-testid="slackDisplayName" id="name">Peter Babs</h1>
+          <h3>Mern Stack Developer</h3>
+
+          <!-- contact -->
+          <div class="contacts">
+            <p data-testid="slackEmail" id="email">
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:timiebabs@gmail.com" data-testid="slackEmail"
+                >timiebabs@gmail.com</a
+              >
+            </p>
+            <!-- social -->
+            <div class="social">
+              <!-- TODO: Add icons -->
+              <ul>
+                <!-- twitter -->
+                <li>
+                  <a href="https://x.com/peterson_babs">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                </li>
+                <!-- github -->
+                <li>
+                  <a href="https://github.com/petersonbabs">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+                <!-- instagram -->
+                <li>
+                  <a href="https://instagram.com/codingbabs">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="time">
+              <p>
+                Current Time (UTC): <span data-testid="currentTimeUTC"></span>
+              </p>
+              <p>Current Day: <span data-testid="currentDay"></span></p>
+              <span></span>
+            </div>
+          </div>
+          <!-- end of contact -->
+        </div>
+        <!-- End of About left container -->
+      </section>
+      <!-- end of About left -->
+
+      <!-- About right -->
+      <section class="about-right">
+        <div class="about-right-container">
+          <div class="greeting">
+            <h1>HELLO<span>!</span></h1>
+            <h3>Here's who I am, what i do and my 2 years goals!</h3>
+          </div>
+
+          <div class="bio">
+            <p>
+                I am a Mern Stack web developer. I build user-centric solutions for business owners in Africa through responsive and highly-scalable web applications.
+            </p>
+            <p>
+                More than software, I am passionate about building solutions or being part of one.
+            </p>
+          </div>
+          <h3>Which is why my goals in the next 2 years are to:</span></h3>
+
+          <div class="goals">
+            <ul>
+              <li>
+                Secure a software engineering job at a company solving issues related to health anywhere in the world.
+              </li>
+
+              <li>
+                Get a mentor who will help me grow mentally, personally, and professionally.
+              </li>
+
+              <li>
+                Kickoff my own startup targeted at solving logistics problems in Nigeria.
+              </li>
+
+              
+            </ul>
+          </div>
+
+          <div>
+            <h3>Sponsors:</h3>
+              <ul class="sponsors">
+                  <li >
+                    <a href="https://hng.tech/learn" data-testid="hngLink"
+                      >HNG Tech</a
+                    >
+                  </li>
+                  <li >
+                    <a href="https://keyword.dog" data-testid="keywordLink"
+                    class="blue">Keyword Dog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://scrapeanyweb.site"
+                      data-testid="scrapeanywebLink"
+                      >Scrape Any Web</a
+                    >
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </section>
+      <!-- end of About right -->
+    </section>
+    <!-- END OF CONTAINER -->
+    <script src="./script.js"></script>
+  </body>
+</html>

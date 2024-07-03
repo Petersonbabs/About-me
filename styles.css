@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+/* VARIABLES */
+:root{
+    --blue: #13A0C2;
+    --black: #12192c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.container {
+  width: 95vw;
+  margin: auto;
+  display: grid;
+}
+
+/* 
+====================
+====================
+ABOUT LEFT
+====================
+====================
+*/
+.about-left{
+    background: var(--blue);
+}
+
+.about-left-container {
+  background: var(--black);
+  padding: 4rem 4rem 2.5rem 5rem;
+  text-align: center;
+}
+.about-left,
+.about-left a {
+  color: #fff;
+}
+
+.about-left #name {
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--blue);
+}
+
+.about-left h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+}
+
+.about-left .contacts{
+    margin-top: 1rem;
+}
+
+.about-left #email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.about-left #email a{
+    color: var(--blue);
+}
+
+.about-left #email i{
+    border-radius: .5rem 0;
+    color: var(--black);
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social ul{
+    background: var(--black);
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+    border-radius: 0 0 12px 12px;
+}
+.social li{
+    list-style-type: none;
+    background: var(--blue);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.social li:hover{
+    background: #edffec;
+    color: #000;
+}
+
+.social li:hover a{
+    color: #000;
+}
+
+.about-left .time{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.about-left .time p{
+    color: var(--blue);
+    font-size: small;
+}
+
+/* 
+====================
+====================
+END OF ABOUT LEFT
+====================
+====================
+*/
+
+
+
+/* 
+====================
+====================
+ABOUT RIGHT
+====================
+====================
+*/
+
+.about-right{
+    background-color: var(--black);
+    color: #fff;
+}
+
+.about-right-container{
+    width: 95%;
+    margin: auto;
+}
+
+.about-right h1{
+    text-align: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.about-right h1 span{
+    color: var(--blue);
+}
+.about-right h3{
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.about-right .bio {
+    line-height: 2;
+}
+
+.about-right .bio p{
+    margin: .7rem 0 0 0;
+}
+
+.about-right .goals li{
+    list-style: disc;
+    margin: 1.5rem;
+}
+
+.about-right .sponsors{
+    display: flex;  
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.about-right .sponsors a{
+    border: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    font-weight: 600;
+    background: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    color:#fff
+}
+
+.about-right .sponsors a.blue{
+    background: var(--blue);
+}
+
+/* 
+====================
+====================
+END OF ABOUT RIGHT
+====================
+====================
+*/
+
+
+@media screen and (min-width: 992px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+       
+    }
+
+    .about-left{
+        padding: 1rem 0;
+    }
+
+    .about-left-container{
+        max-width: 90%;
+        margin: auto;
+    }
+}
