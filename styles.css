@@ -16,6 +16,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  background: var(--black);
 }
 
 
@@ -37,8 +38,8 @@ ABOUT LEFT
 }
 
 .about-left-container {
+    padding: 3rem 0 0;
   background: var(--black);
-  padding: 4rem 4rem 2.5rem 5rem;
   text-align: center;
 }
 .about-left,
@@ -258,6 +259,7 @@ END OF ABOUT RIGHT
     .about-left-container{
         max-width: 90%;
         margin: auto;
+        padding: 3rem;
     }
 
     .about-left .time{
