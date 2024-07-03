@@ -2,7 +2,8 @@
 
 /* VARIABLES */
 :root{
-    --blue: #13A0C2;
+    --blue: #04738f;
+    --dark-blue: #0b85a3;
     --black: #12192c;
 }
 
@@ -77,14 +78,18 @@ ABOUT LEFT
 }
 
 .about-left #email i{
-    border-radius: .5rem 0;
-    color: var(--black);
-    width: 40px;
-    height: 40px;
+    border-radius: .3rem 0;
+    color: var(--blue);
+    width: 30px;
+    height: 30px;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.social{
+    margin: 1rem 0;
 }
 
 .social ul{
@@ -99,8 +104,8 @@ ABOUT LEFT
     list-style-type: none;
     background: var(--blue);
     color: #fff;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin: 0 0.5rem;
     border-radius: 50%;
     display: flex;
@@ -121,8 +126,12 @@ ABOUT LEFT
 
 .about-left .time{
     display: flex;
-    gap: 1rem;
+    column-gap: 1rem;
+    flex-direction: column;
     justify-content: center;
+    padding: 0.3rem;
+    align-items: center;
+    border: #f1f1f1 dotted 1px;
 }
 
 .about-left .time p{
@@ -188,6 +197,8 @@ ABOUT RIGHT
 .about-right .sponsors{
     display: flex;  
     margin: 2rem 0;
+    flex-direction: column;
+    gap: 1rem;
     justify-content: center;
 }
 
@@ -201,15 +212,27 @@ ABOUT RIGHT
     border: 2px solid #fff;
     border-radius: 20px;
     padding: .5rem 1rem;
+    min-width: fit-content;
     font-weight: 600;
     background: transparent;
     margin: 0 0.5rem;
+    transition: background .5s ease, color .5s ease ;
     cursor: pointer;
     color:#fff
 }
 
+.about-right .sponsors a:hover {
+    background: var(--blue);
+    color: #000;
+}
+
 .about-right .sponsors a.blue{
     background: var(--blue);
+}
+
+.about-right .sponsors a.blue:hover {
+    background: #044453;
+    color: #fff;
 }
 
 /* 
@@ -235,5 +258,9 @@ END OF ABOUT RIGHT
     .about-left-container{
         max-width: 90%;
         margin: auto;
+    }
+
+    .about-left .time{
+        flex-direction: row;
     }
 }
